@@ -9,9 +9,9 @@ from ast import literal_eval
 PRODUCTION = False
 
 if PRODUCTION :
-    STATIC_PATH = '/your/absoulte/production/path/static'
+    STATIC_PATH = '/your/absoulte/production/path/to/folder/static'
 else:
-    STATIC_PATH = '/home/sukarno/Repository/bottle-boilerplate/static'
+    STATIC_PATH = '/your/absolute/development/path/to/folder/static'
 
 if not PRODUCTION:
     debug(True)
