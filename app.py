@@ -11,7 +11,7 @@ PRODUCTION = False
 if PRODUCTION :
     STATIC_PATH = '/your/absoulte/production/path/to/folder/static'
 else:
-    STATIC_PATH = '/your/absolute/development/path/to/folder/static'
+    STATIC_PATH = './static'
 
 if not PRODUCTION:
     debug(True)
