@@ -1,9 +1,8 @@
-from db.postgresql import get_db_connection, get_db_cursor
-from db.util import *
-from db.redis import *
+from db.postgresql import get_db_cursor
 import datetime
+from typing import List, Dict
 
-def get_session(session):
+def get_session(session : str) -> Dict:
 
     if not session:
         return {'status' : 'Parameter session tidak ditemukan'}
@@ -17,7 +16,7 @@ def get_session(session):
 
     return row['data_session']
 
-def check_session(session):
+def check_session(session : str) -> Dict:
 
     if not session:
         return {'status' : 'Parameter session tidak ditemukan'}

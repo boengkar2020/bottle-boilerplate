@@ -4,9 +4,11 @@ sys.path.append(os.path.dirname(__file__))
 from bottle import run, request, response, route, abort,default_app, static_file, mako_template, debug, redirect
 import json, functools
 from ast import literal_eval
-#from models.session import *
 
-PRODUCTION = False
+try:
+    PRODUCTION = bool(os.environ['PRODUCTION'])
+except:
+    PRODUCTION = False
 
 if PRODUCTION :
     STATIC_PATH = '/your/absoulte/production/path/to/folder/static'

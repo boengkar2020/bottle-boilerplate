@@ -1,19 +1,22 @@
 <%inherit file="base.html"/>
 
-<div id="app" v-cloak>
-  <v-app>
-    <v-main app class="grey lighten-4">
-      <v-container>
-        <v-row align="center" justify="center">
-          <v-img
-            src="static/img/Bottle-logo.svg.png"
-          >
-          </v-img>
-        </v-row>
-      </v-container>
-    </v-main>
-  </v-app>
-</div>
+<v-app>
+  <v-main>
+    <v-container>
+      <v-row>
+        <v-col>
+          <div class="text-h5 text-center text-green font-weight-medium">{{ cls }}</div>
+        </v-col>
+      </v-row>
+
+      <v-row class="mt-8">
+        <v-col>
+          <v-img src="static/img/Bottle-logo.svg.png" height="80"></v-img>
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-main>
+</v-app>
 
 <%block name="jsscript">
 <script src="static/js/main.js"></script>

@@ -23,5 +23,5 @@ def generate_token(data):
 def generate_id(data):
     return str(uuid.uuid5(uuid.NAMESPACE_OID,data))
 
-def first_letter(txt):
+def first_letter(txt : str) -> str:
     return txt[0]

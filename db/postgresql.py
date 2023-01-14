@@ -33,7 +33,7 @@ def get_db_connection():
 
 
 @contextmanager
-def get_db_cursor(commit=False):
+def get_db_cursor(commit : bool  = False):
     """
     psycopg2 connection.cursor context manager.
     Creates a new cursor and closes it, commiting changes if specified.
