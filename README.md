@@ -4,11 +4,11 @@ To using this boilerplate, i recommend use virtualenv.
 
 1. Clone this project to yours computer
 
-`$ git clone https://github.com/boengkar2020/bottle-boilerplate.git`
+`$ git clone https://github.com/boengkar2020/bottle-boilerplate.git myproject`
 
 2. Create virtualenv
 
-`$ cd bottle-boilerplate`
+`$ cd myproject`
 
 `$ virtualenv -p python3 venv`
 
